@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preventio Group SAC - Monitoreos Ocupacionales Ley 29783</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased overflow-x-hidden">
+
+    <!-- Top Contact Bar: Barra de contacto oficial y real -->
+    <div class="bg-slate-900 text-white py-3 px-4 sticky top-0 z-50 shadow-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-xs md:text-sm">
+            <div class="flex flex-col md:flex-row items-center gap-2 md:gap-6 text-center md:text-left">
+                <span class="flex items-center gap-1.5 text-slate-300">
+                    <span class="text-amber-400">📍</span> Calle Las Violetas 103, Comas, Lima
+                </span>
+                <span class="hidden md:inline text-slate-600">|</span>
+                <span class="flex items-center gap-1.5 text-slate-300">
+                    <span class="text-amber-400">🛡️</span> Cumplimiento Riguroso Ley N° 29783
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/51933590953?text=Hola%20Preventio%20Group%20SAC,%20deseo%20realizar%20una%20consulta%20sobre%20monitoreos%20ocupacionales." target="_blank" class="flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 font-bold transition-all">
+                    <span class="inline-block h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    💬 WhatsApp de Consultas: 933 590 953
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="bg-white/95 backdrop-blur-md sticky top-[108px] md:top-[48px] z-40 border-b border-slate-100 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="h-11 w-11 bg-gradient-to-tr from-amber-500 to-blue-900 rounded-xl flex items-center justify-center text-white font-bold shadow-md shadow-blue-900/10 group-hover:scale-105 transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-extrabold text-xl tracking-tight text-slate-900 uppercase">Preventio Group</span>
+                    <span class="text-[10px] font-semibold tracking-widest text-blue-600 uppercase">S.A.C. • Monitoreos Ocupacionales</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-8">
+                <a href="#ley29783" class="text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors">La Ley y Multas</a>
+                <a href="#servicios" class="text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors">Agentes a Medir</a>
+                <a href="#calculadora" class="text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors bg-amber-50 px-3 py-1 rounded-full text-amber-700 hover:bg-amber-100">Calculadora SUNAFIL</a>
+                <a href="#metodologia" class="text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors">Metodología</a>
+                <a href="#contacto" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl text-sm font-bold bg-blue-900 text-white hover:bg-slate-800 shadow-lg shadow-blue-950/10 hover:shadow-xl transition-all">
+                    Cotizar Monitoreo
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-600 hover:text-slate-900 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-100 bg-white px-4 pt-4 pb-6 space-y-3 shadow-inner">
+            <a href="#ley29783" class="block text-base font-semibold text-slate-700 hover:text-blue-900 py-2">La Ley y Multas</a>
+            <a href="#servicios" class="block text-base font-semibold text-slate-700 hover:text-blue-900 py-2">Agentes a Medir</a>
+            <a href="#calculadora" class="block text-base font-semibold text-slate-700 hover:text-blue-900 py-2 text-amber-600 font-bold">Calculadora SUNAFIL</a>
+            <a href="#metodologia" class="block text-base font-semibold text-slate-700 hover:text-blue-900 py-2">Metodología</a>
+            <a href="#contacto" class="block text-center px-4 py-3 rounded-xl text-base font-bold bg-blue-900 text-white hover:bg-slate-800 transition-all">Cotizar Monitoreo</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-b from-slate-900 via-slate-900 to-blue-950 text-white overflow-hidden py-20 lg:py-28">
+        <!-- Background Grid Pattern -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
+        <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-amber-500 rounded-full filter blur-3xl opacity-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Copywriting content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/20 text-blue-300 text-xs font-semibold tracking-wide uppercase">
+                        🛡️ Cumplimiento 100% Ley N° 29783 - Perú
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-white">
+                        Evita Multas de <span class="text-amber-400 font-black">SUNAFIL</span> y Protege a tu Equipo
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-slate-300 leading-relaxed font-normal max-w-2xl mx-auto lg:mx-0">
+                        No contar con monitoreos ocupacionales es calificado como una <strong class="text-white font-semibold">Infracción Grave</strong>. En <span class="text-white font-bold">Preventio Group SAC</span> medimos los 5 agentes obligatorios con equipos certificados y personal acreditado.
+                    </p>
+
+                    <!-- Trust factors badges -->
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-4 text-xs font-semibold text-slate-300 pt-2">
+                        <span class="flex items-center gap-1.5 bg-slate-800/60 px-3.5 py-2 rounded-lg border border-slate-700/50">
+                            ✓ Equipos Calibrados (INACAL)
+                        </span>
+                        <span class="flex items-center gap-1.5 bg-slate-800/60 px-3.5 py-2 rounded-lg border border-slate-700/50">
+                            ✓ Firmas por Ing. Habilitados
+                        </span>
+                        <span class="flex items-center gap-1.5 bg-slate-800/60 px-3.5 py-2 rounded-lg border border-slate-700/50">
+                            ✓ Blindaje Legal 100%
+                        </span>
+                    </div>
+
+                    <!-- Call to Actions -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                        <a href="#calculadora" class="inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-bold bg-amber-500 text-slate-950 hover:bg-amber-400 transition-all shadow-lg shadow-amber-500/20 hover:scale-[1.02]">
+                            Calcular Multa Estimada
+                        </a>
+                        <a href="#servicios" class="inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-bold bg-slate-800/80 hover:bg-slate-800 text-white transition-all border border-slate-700 hover:border-slate-600">
+                            Ver Agentes Obligatorios
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Visual CTA Card / Quick Quote -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white text-slate-900 rounded-3xl p-6 sm:p-8 shadow-2xl relative border border-slate-100">
+                        <div class="absolute -top-4 -right-4 bg-red-600 text-white text-xs font-bold uppercase tracking-widest px-3.5 py-1.5 rounded-full shadow-lg">
+                            ¡Urgente!
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">¿Listo para una inspección?</h3>
+                        <p class="text-sm text-slate-500 mb-6">SUNAFIL audita el Registro de Monitoreo Ocupacional de los últimos 12 meses. Solicita un pre-diagnóstico gratuito.</p>
+                        
+                        <form id="hero-quick-form" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Nombre y Apellido</label>
+                                <input type="text" id="quick-name" required placeholder="Ej: Carlos Mendoza" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Celular / WhatsApp</label>
+                                <input type="tel" id="quick-phone" required placeholder="Ej: 933590953" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent transition-all">
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">N° de Trabajadores</label>
+                                    <input type="number" id="quick-workers" required placeholder="Ej: 45" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent transition-all">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Ciudad / Región</label>
+                                    <input type="text" id="quick-location" required placeholder="Ej: Lima" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent transition-all">
+                                </div>
+                            </div>
+                            <button type="submit" class="w-full py-4 px-6 rounded-xl text-sm font-bold bg-blue-900 text-white hover:bg-slate-950 transition-all shadow-lg shadow-blue-950/20">
+                                Enviar Diagnóstico por WhatsApp →
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Law Section: El Marco de la Ley 29783 -->
+    <section id="ley29783" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold tracking-widest text-blue-600 uppercase mb-2">Marco Legal en Perú</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    ¿Por qué los Monitoreos son Obligatorios?
+                </p>
+                <p class="text-slate-600 mt-4 text-base sm:text-lg">
+                    La Ley N° 29783 exige a los empleadores garantizar condiciones seguras de trabajo. No realizar las mediciones periódicas es una de las infracciones más detectadas por SUNAFIL.
+                </p>
+            </div>
+
+            <!-- Law Highlights Cards Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Law card 1 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 relative group hover:shadow-xl hover:shadow-slate-100 transition-all duration-300">
+                    <div class="h-12 w-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center mb-6 font-bold text-lg">
+                        ⚖️
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">La Ley N° 29783</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Artículo 56 y 65: Los empleadores deben prever que la exposición a los agentes físicos, químicos, biológicos, ergonómicos y psicosociales no generen daños en la salud de los trabajadores.
+                    </p>
+                    <span class="block text-xs font-bold text-amber-600 mt-4 tracking-wider uppercase">Artículos Obligatorios</span>
+                </div>
+
+                <!-- Law card 2 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 relative group hover:shadow-xl hover:shadow-slate-100 transition-all duration-300">
+                    <div class="h-12 w-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center mb-6 font-bold text-lg">
+                        🔎
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Auditoría SUNAFIL</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        El primer documento que solicitará el inspector del Ministerio de Trabajo (SUNAFIL) es el <strong class="text-slate-900">Registro de Monitoreo de Agentes Ocupacionales</strong> del año en curso.
+                    </p>
+                    <span class="block text-xs font-bold text-red-600 mt-4 tracking-wider uppercase">Foco de Inspección</span>
+                </div>
+
+                <!-- Law card 3 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 relative group hover:shadow-xl hover:shadow-slate-100 transition-all duration-300">
+                    <div class="h-12 w-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-6 font-bold text-lg">
+                        💼
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Retorno de Inversión</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Monitorear no solo evita multas; reduce significativamente el ausentismo laboral, disminuye los descansos médicos y mitiga demandas civiles por enfermedades profesionales.
+                    </p>
+                    <span class="block text-xs font-bold text-emerald-600 mt-4 tracking-wider uppercase">Beneficio Corporativo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Calculator Section -->
+    <section id="calculadora" class="py-20 bg-slate-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left: Explanatory Copy of Multas -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-flex items-center gap-1 bg-amber-500/10 border border-amber-400/20 text-amber-400 text-xs font-semibold px-3 py-1.5 rounded-full uppercase">
+                        ⚠️ Alerta SUNAFIL 2026
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                        Calcula la Multa de tu Empresa en 3 Clics
+                    </h2>
+                    <p class="text-slate-300 text-base leading-relaxed">
+                        Las multas de SUNAFIL se calculan con base en el valor de la <strong class="text-white">UIT vigente (S/. 5,350)</strong>, el tipo de empresa y el número de trabajadores afectados (toda tu plantilla si no hiciste el monitoreo general). 
+                    </p>
+                    <div class="p-4 bg-slate-800/80 rounded-2xl border border-slate-700/60 space-y-3">
+                        <div class="flex items-center gap-3 text-sm text-slate-300">
+                            <span class="text-red-400 text-lg">✖</span>
+                            <span>No realizar monitoreos = <strong>Infracción Grave</strong> (Numeral 26.2 del RLGIT).</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-sm text-slate-300">
+                            <span class="text-red-400 text-lg">✖</span>
+                            <span>No poseer los registros obligatorios de SST = <strong>Infracción Grave</strong>.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Fully Functional Calculator App -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-800 rounded-3xl p-6 sm:p-8 border border-slate-700/80 shadow-2xl">
+                        <h3 class="text-xl font-bold mb-6 text-center text-slate-100 flex items-center justify-center gap-2">
+                            <span>📊</span> Simular Escala de Multas
+                        </h3>
+
+                        <div class="space-y-6">
+                            <!-- Input 1: Tipo de Empresa -->
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+                                    1. Tipo de Empresa / Régimen Laboral
+                                </label>
+                                <div class="grid grid-cols-3 gap-3">
+                                    <button onclick="setCompanyType('micro')" id="btn-type-micro" class="calculator-btn-type px-4 py-3 rounded-xl border text-sm font-semibold text-center transition-all bg-slate-700 border-slate-600 text-white hover:bg-slate-600">
+                                        Microempresa
+                                    </button>
+                                    <button onclick="setCompanyType('pequena')" id="btn-type-pequena" class="calculator-btn-type px-4 py-3 rounded-xl border text-sm font-semibold text-center transition-all bg-slate-700 border-slate-600 text-white hover:bg-slate-600">
+                                        Pequeña Empresa
+                                    </button>
+                                    <button onclick="setCompanyType('no-mype')" id="btn-type-no-mype" class="calculator-btn-type px-4 py-3 rounded-xl border text-sm font-semibold text-center transition-all bg-blue-600 border-blue-500 text-white shadow-lg">
+                                        No MYPE (Gral)
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Input 2: Número de Trabajadores Afectados -->
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+                                    2. Número de Trabajadores Afectados
+                                </label>
+                                <div class="flex items-center gap-4">
+                                    <input type="range" id="worker-range" min="1" max="1000" value="50" oninput="updateWorkerCount(this.value)" class="w-full accent-amber-500 h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer">
+                                    <div class="w-24 shrink-0 text-center">
+                                        <input type="number" id="worker-number" min="1" max="1000" value="50" oninput="updateWorkerRange(this.value)" class="w-full text-center px-2 py-2 bg-slate-700 border border-slate-600 rounded-lg text-white font-bold text-sm focus:outline-none focus:ring-2 focus:ring-amber-500">
+                                    </div>
+                                </div>
+                                <p class="text-[11px] text-slate-400 mt-1">
+                                    * SUNAFIL considera afectados a todos los trabajadores expuestos de forma general si no hay estudios de base.
+                                </p>
+                            </div>
+
+                            <!-- Input 3: Gravedad del Incumplimiento -->
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+                                    3. Tipo de Falta Detectable
+                                </label>
+                                <select id="infraction-severity" onchange="calculateFine()" class="w-full px-4 py-3 rounded-xl bg-slate-700 border border-slate-600 text-white text-sm font-medium focus:outline-none focus:ring-2 focus:ring-amber-500">
+                                    <option value="grave" selected>Infracción Grave (Ej: No contar con monitoreos ocupacionales)</option>
+                                    <option value="muy-grave">Infracción Muy Grave (Ej: No contar con monitoreos + reincidencia u obstrucción)</option>
+                                </select>
+                            </div>
+
+                            <!-- Result Block -->
+                            <div class="bg-gradient-to-br from-slate-900 to-slate-950 p-6 rounded-2xl border border-slate-700 text-center space-y-3 relative overflow-hidden">
+                                <div class="absolute top-0 left-0 w-full h-1.5 bg-red-500"></div>
+                                <p class="text-xs uppercase tracking-widest text-slate-400 font-semibold">Multa Estimada de SUNAFIL</p>
+                                
+                                <div class="space-y-1">
+                                    <p class="text-3xl sm:text-4xl font-extrabold text-red-500" id="fine-soles">S/. 12,840.00</p>
+                                    <p class="text-sm text-slate-300 font-semibold" id="fine-uit">2.40 UITs</p>
+                                </div>
+
+                                <p class="text-[11px] text-slate-400 italic">
+                                    Valores de multa estimados en base al cuadro de escala de multas vigentes RLGIT de SUNAFIL (1 UIT = S/. 5,350). Las multas pueden acumularse por múltiples agentes omitidos.
+                                </p>
+
+                                <div class="pt-2">
+                                    <a href="#contacto" onclick="saveCalculatorResult()" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm transition-all shadow-md shadow-amber-500/10">
+                                        💡 Solicitar Plan de Evitación de Multas
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section: Los 5 Agentes de Monitoreo -->
+    <section id="servicios" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold tracking-widest text-blue-600 uppercase mb-2">Nuestras Mediciones Especializadas</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Evaluación de los 5 Agentes del Entorno Laboral
+                </p>
+                <p class="text-slate-600 mt-4 text-base sm:text-lg">
+                    Realizamos mediciones cuantitativas y cualitativas con un equipo de ingenieros habilitados de Higiene y Seguridad Ocupacional.
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Agente 1: Físicos -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="h-14 w-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 text-2xl font-bold shadow-inner">
+                            🔊
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3">Agentes Físicos</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Evaluamos las variables físicas del ambiente laboral que pueden afectar la salud auditiva, visual o el sistema nervioso del personal expuesto.
+                        </p>
+                        <ul class="space-y-2 text-xs font-semibold text-slate-500 mb-6">
+                            <li class="flex items-center gap-2"><span class="text-blue-600">✓</span> Sonometría y Dosimetría de Ruido</li>
+                            <li class="flex items-center gap-2"><span class="text-blue-600">✓</span> Luxometría (Niveles de Iluminación)</li>
+                            <li class="flex items-center gap-2"><span class="text-blue-600">✓</span> Estrés Térmico (Calor o Frío extremo)</li>
+                            <li class="flex items-center gap-2"><span class="text-blue-600">✓</span> Medición de Vibración de cuerpo entero o mano-brazo</li>
+                        </ul>
+                    </div>
+                    <a href="#contacto" onclick="setSelectAgent('físicos')" class="text-sm font-bold text-blue-900 hover:text-blue-700 flex items-center gap-1 group">
+                        Cotizar Físicos <span class="group-hover:translate-x-1 transition-transform">→</span>
+                    </a>
+                </div>
+
+                <!-- Agente 2: Químicos -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="h-14 w-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center mb-6 text-2xl font-bold shadow-inner">
+                            🧪
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3">Agentes Químicos</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Muestreo y análisis de sustancias nocivas en el aire para asegurar que no se superen los Límites Permisibles establecidos por el DS N° 015-2005-SA.
+                        </p>
+                        <ul class="space-y-2 text-xs font-semibold text-slate-500 mb-6">
+                            <li class="flex items-center gap-2"><span class="text-amber-600">✓</span> Polvo Respirable y Total (Gravimetría)</li>
+                            <li class="flex items-center gap-2"><span class="text-amber-600">✓</span> Monitoreo de Gases y Vapores Orgánicos</li>
+                            <li class="flex items-center gap-2"><span class="text-amber-600">✓</span> Humos Metálicos de Soldadura</li>
+                            <li class="flex items-center gap-2"><span class="text-amber-600">✓</span> Ácidos, Álcalis y Compuestos Volátiles</li>
+                        </ul>
+                    </div>
+                    <a href="#contacto" onclick="setSelectAgent('químicos')" class="text-sm font-bold text-blue-900 hover:text-blue-700 flex items-center gap-1 group">
+                        Cotizar Químicos <span class="group-hover:translate-x-1 transition-transform">→</span>
+                    </a>
+                </div>
+
+                <!-- Agente 3: Biológicos -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="h-14 w-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 text-2xl font-bold shadow-inner">
+                            🦠
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3">Agentes Biológicos</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Identificación microbiológica en aire o superficies para mitigar focos de infecciones cruzadas, epidemias o asma ocupacional.
+                        </p>
+                        <ul class="space-y-2 text-xs font-semibold text-slate-500 mb-6">
+                            <li class="flex items-center gap-2"><span class="text-emerald-600">✓</span> Recuento de Placas de Hongos y Moho</li>
+                            <li class="flex items-center gap-2"><span class="text-emerald-600">✓</span> Medición de Bacterias Aerobias Mesófilas</li>
+                            <li class="flex items-center gap-2"><span class="text-emerald-600">✓</span> Evaluaciones microbiológicas en aire acondicionado</li>
+                            <li class="flex items-center gap-2"><span class="text-emerald-600">✓</span> Muestreo de superficies con hisopado profesional</li>
+                        </ul>
+                    </div>
+                    <a href="#contacto" onclick="setSelectAgent('biológicos')" class="text-sm font-bold text-blue-900 hover:text-blue-700 flex items-center gap-1 group">
+                        Cotizar Biológicos <span class="group-hover:translate-x-1 transition-transform">→</span>
+                    </a>
+                </div>
+
+                <!-- Agente 4: Ergonómicos -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="h-14 w-14 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center mb-6 text-2xl font-bold shadow-inner">
+                            🧍
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3">Agentes Ergonómicos</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Evaluamos las posturas forzadas, el levantamiento manual de cargas y los movimientos repetitivos bajo la RM 375-2008-TR.
+                        </p>
+                        <ul class="space-y-2 text-xs font-semibold text-slate-500 mb-6">
+                            <li class="flex items-center gap-2"><span class="text-purple-600">✓</span> Análisis Postural en Campo (RULA, REBA, OWAS)</li>
+                            <li class="flex items-center gap-2"><span class="text-purple-600">✓</span> Evaluación de Esfuerzo de Levantamiento (NIOSH)</li>
+                            <li class="flex items-center gap-2"><span class="text-purple-600">✓</span> Evaluación de Puestos Administrativos/Oficina</li>
+                            <li class="flex items-center gap-2"><span class="text-purple-600">✓</span> Rediseño Ergonómico preventivo de la estación</li>
+                        </ul>
+                    </div>
+                    <a href="#contacto" onclick="setSelectAgent('ergonómicos')" class="text-sm font-bold text-blue-900 hover:text-blue-700 flex items-center gap-1 group">
+                        Cotizar Ergonómicos <span class="group-hover:translate-x-1 transition-transform">→</span>
+                    </a>
+                </div>
+
+                <!-- Agente 5: Psicosociales -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="h-14 w-14 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center mb-6 text-2xl font-bold shadow-inner">
+                            🧠
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3">Agentes Psicosociales</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Medición de las dinámicas laborales e individuales que causan sobrecarga mental, burnout, estrés laboral crónico y baja productividad.
+                        </p>
+                        <ul class="space-y-2 text-xs font-semibold text-slate-500 mb-6">
+                            <li class="flex items-center gap-2"><span class="text-red-600">✓</span> Aplicación de la RM 412-2022-TR</li>
+                            <li class="flex items-center gap-2"><span class="text-red-600">✓</span> Cuestionario ISTAS-21 y COPSOQ</li>
+                            <li class="flex items-center gap-2"><span class="text-red-600">✓</span> Evaluaciones de Clima Laboral y Estrés Crónico</li>
+                            <li class="flex items-center gap-2"><span class="text-red-600">✓</span> Talleres y Planes de Acción Correctiva</li>
+                        </ul>
+                    </div>
+                    <a href="#contacto" onclick="setSelectAgent('psicosociales')" class="text-sm font-bold text-blue-900 hover:text-blue-700 flex items-center gap-1 group">
+                        Cotizar Psicosociales <span class="group-hover:translate-x-1 transition-transform">→</span>
+                    </a>
+                </div>
+
+                <!-- Bloque Especial: Auditoría Gratuita -->
+                <div class="bg-gradient-to-br from-blue-900 to-slate-950 rounded-3xl p-8 shadow-xl text-white flex flex-col justify-between border border-blue-850">
+                    <div>
+                        <span class="inline-flex items-center px-2.5 py-1 rounded-full bg-amber-500 text-slate-950 text-[10px] font-bold uppercase tracking-widest mb-6">
+                            Exclusivo Empresas
+                        </span>
+                        <h3 class="text-2xl font-extrabold mb-3">¿No sabes por dónde iniciar?</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            No todas las empresas necesitan evaluar los 5 agentes con la misma frecuencia ni intensidad. Ofrecemos un plan estructurado según tu rubro específico.
+                        </p>
+                    </div>
+                    <div class="pt-6">
+                        <a href="#contacto" class="w-full inline-flex items-center justify-center py-3.5 px-6 rounded-xl bg-white text-blue-900 hover:bg-slate-100 font-bold text-sm transition-all text-center">
+                            Diagnóstico de Matriz IPERC →
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section: ¿Cómo trabajamos? -->
+    <section id="metodologia" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold tracking-widest text-blue-600 uppercase mb-2">Metodología de Trabajo Rigurosa</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Nuestro Proceso de Acompañamiento
+                </p>
+                <p class="text-slate-600 mt-4 text-base sm:text-lg">
+                    Nos encargamos de todo el ciclo, garantizando un informe robusto ante cualquier fiscalización técnica o legal de la autoridad competente.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8 relative">
+                <!-- Step 1 -->
+                <div class="space-y-4 relative">
+                    <div class="text-5xl font-extrabold text-blue-100 absolute -top-5 -left-1 select-none z-0">01</div>
+                    <div class="relative z-10 pt-4">
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Diseño y Planificación</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Analizamos tu matriz IPERC para determinar qué agentes corresponden medir y diseñar la estrategia técnica óptima.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="space-y-4 relative">
+                    <div class="text-5xl font-extrabold text-blue-100 absolute -top-5 -left-1 select-none z-0">02</div>
+                    <div class="relative z-10 pt-4">
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Monitoreo In Situ</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Nuestros ingenieros acuden a tus instalaciones utilizando instrumental de alta precisión calibrado por INACAL, sin interrumpir tu producción.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="space-y-4 relative">
+                    <div class="text-5xl font-extrabold text-blue-100 absolute -top-5 -left-1 select-none z-0">03</div>
+                    <div class="relative z-10 pt-4">
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Análisis de Laboratorio</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Procesamos las muestras en laboratorios acreditados para asegurar precisión absoluta en los resultados de agentes químicos y biológicos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="space-y-4 relative">
+                    <div class="text-5xl font-extrabold text-blue-100 absolute -top-5 -left-1 select-none z-0">04</div>
+                    <div class="relative z-10 pt-4">
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Entrega del Informe</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Te proporcionamos informes visados con planes de acción correctivos listos para archivar y ser presentados ante SUNAFIL.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust elements and Legal Warnings -->
+    <section class="py-16 bg-amber-50 border-t border-b border-amber-100 text-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-black text-amber-950 mb-4 flex items-center gap-2">
+                        <span>🛡️</span> Blindaje Técnico Contra Multas
+                    </h3>
+                    <div class="space-y-4 text-slate-700 text-sm leading-relaxed">
+                        <p>
+                            En el Perú, no sirve de nada realizar un monitoreo si los **certificados de calibración** de los equipos están vencidos o no cuentan con trazabilidad oficial. SUNAFIL rechaza de inmediato informes que carecen de rigor técnico.
+                        </p>
+                        <p>
+                            Al trabajar con <strong>Preventio Group SAC</strong>, te aseguras de contar con la firma física y digital de ingenieros higienistas colegiados y habilitados, anexando el certificado de calibración vigente de cada equipo usado (luxómetros, sonómetros, bombas de vacío, etc.) emitido por laboratorios acreditados por INACAL.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial -->
+                <div class="bg-white p-8 rounded-2xl border border-amber-100 shadow-sm relative">
+                    <span class="absolute top-4 right-6 text-6xl text-amber-200 font-serif leading-none select-none">“</span>
+                    <p class="text-slate-700 italic text-sm relative z-10 mb-6">
+                        "Estábamos preocupados por una inminente fiscalización de SUNAFIL en nuestro local de Lurín. Preventio Group SAC nos asistió en tiempo récord midiendo ruido y agentes ergonómicos. Los informes pasaron la inspección sin ninguna observación técnica. Excelentes profesionales."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="h-10 w-10 bg-slate-100 rounded-full flex items-center justify-center font-bold text-sm text-slate-700">
+                            MR
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-900">Ing. Martín Rivas</p>
+                            <p class="text-[11px] text-slate-500">Jefe de SSOMA - Constructora e Inmobiliaria del Sur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Contact & Quote Form Section -->
+    <section id="contacto" class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-slate-100 relative">
+                
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <h2 class="text-xs font-bold tracking-widest text-blue-600 uppercase mb-2">Presupuesto Rápido</h2>
+                    <p class="text-3xl font-extrabold text-slate-900 tracking-tight">
+                        Solicita tu Cotización Sin Compromiso
+                    </p>
+                    <p class="text-slate-500 mt-2 text-sm">
+                        Completa el formulario y un especialista corporativo de <strong>Preventio Group SAC</strong> se pondrá en contacto en menos de 2 horas hábiles.
+                    </p>
+                </div>
+
+                <form id="main-contact-form" class="space-y-6">
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">Nombre de Contacto</label>
+                            <input type="text" id="form-name" required placeholder="Ej: Diana Quispe" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">Cargo / Puesto</label>
+                            <input type="text" id="form-role" placeholder="Ej: Jefe de Recursos Humanos" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent transition-all">
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">Razón Social de la Empresa</label>
+                            <input type="text" id="form-company" required placeholder="Ej: Servicios Industriales S.A.C." class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">RUC de la Empresa (Opcional)</label>
+                            <input type="text" id="form-ruc" pattern="[0-9]{11}" placeholder="Ej: 20123456789" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent transition-all">
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">Correo Electrónico Corporativo</label>
+                            <input type="email" id="form-email" required placeholder="Ej: dquispe@miempresa.com" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">WhatsApp de Contacto</label>
+                            <input type="tel" id="form-phone" required placeholder="Ej: 987654321" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent transition-all">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Agente(s) Ocupacionales que Necesita Monitorear</label>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                            <label class="flex items-center gap-2 p-3 bg-slate-50 hover:bg-slate-100 rounded-xl border border-slate-200 cursor-pointer text-xs font-semibold">
+                                <input type="checkbox" id="check-fisico" value="Físicos" class="rounded text-blue-600 focus:ring-blue-900 h-4 w-4">
+                                <span>Físicos</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-3 bg-slate-50 hover:bg-slate-100 rounded-xl border border-slate-200 cursor-pointer text-xs font-semibold">
+                                <input type="checkbox" id="check-quimico" value="Químicos" class="rounded text-blue-600 focus:ring-blue-900 h-4 w-4">
+                                <span>Químicos</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-3 bg-slate-50 hover:bg-slate-100 rounded-xl border border-slate-200 cursor-pointer text-xs font-semibold">
+                                <input type="checkbox" id="check-biologico" value="Biológicos" class="rounded text-blue-600 focus:ring-blue-900 h-4 w-4">
+                                <span>Biológicos</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-3 bg-slate-50 hover:bg-slate-100 rounded-xl border border-slate-200 cursor-pointer text-xs font-semibold">
+                                <input type="checkbox" id="check-ergonomico" value="Ergonómicos" class="rounded text-blue-600 focus:ring-blue-900 h-4 w-4">
+                                <span>Ergonómicos</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-3 bg-slate-50 hover:bg-slate-100 rounded-xl border border-slate-200 cursor-pointer text-xs font-semibold">
+                                <input type="checkbox" id="check-psicosocial" value="Psicosociales" class="rounded text-blue-600 focus:ring-blue-900 h-4 w-4">
+                                <span>Psicosociales</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-3 bg-slate-50 hover:bg-slate-100 rounded-xl border border-slate-200 cursor-pointer text-xs font-semibold">
+                                <input type="checkbox" id="check-todos" value="Todos" class="rounded text-blue-600 focus:ring-blue-900 h-4 w-4">
+                                <span class="text-blue-900 font-bold">¡Necesito Todos!</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Hidden text fields for calculations populated via simulation -->
+                    <div id="calculator-result-holder" class="hidden p-4 bg-slate-100 border border-slate-200 rounded-2xl text-xs text-slate-600">
+                        <p class="font-bold mb-1">💡 Datos Calculados Adjuntos:</p>
+                        <span id="holder-details">Ninguno</span>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">Mensaje o Detalles del Proyecto</label>
+                        <textarea id="form-message" rows="4" placeholder="Indique rubro de su empresa, dirección de su sede y número de trabajadores..." class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent transition-all"></textarea>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="flex items-center h-5">
+                            <input id="form-privacy" required type="checkbox" checked class="h-4 w-4 text-blue-600 focus:ring-blue-900 border-slate-300 rounded">
+                        </div>
+                        <div class="ml-3 text-xs">
+                            <label for="form-privacy" class="font-medium text-slate-500">Acepto el tratamiento de datos para la cotización y prospección técnica bajo los lineamientos de la Ley N° 29733 (Protección de Datos Personales en el Perú).</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 px-6 rounded-xl text-base font-bold bg-blue-900 text-white hover:bg-slate-950 transition-all shadow-lg shadow-blue-900/10">
+                        Enviar Cotización vía WhatsApp →
+                    </button>
+                </form>
+
+                <!-- Feedback Message Container -->
+                <div id="form-success-box" class="hidden absolute inset-0 bg-white rounded-3xl p-12 flex flex-col items-center justify-center text-center space-y-4">
+                    <div class="h-16 w-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-3xl font-bold">
+                        ✓
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900">¡Datos Procesados!</h3>
+                    <p class="text-slate-500 max-w-md">
+                        Estamos abriendo WhatsApp con tu cotización redactada. Si la ventana no se abre automáticamente, puedes escribirnos directamente al <strong>933 590 953</strong>.
+                    </p>
+                    <button onclick="resetContactForm()" class="px-6 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition-all">
+                        Regresar a la página
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-white pt-16 pb-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Brand details -->
+                <div class="space-y-4 md:col-span-2">
+                    <div class="flex items-center gap-3">
+                        <div class="h-9 w-9 bg-amber-500 rounded-xl flex items-center justify-center text-slate-950 font-bold">
+                            🛡️
+                        </div>
+                        <span class="font-extrabold text-lg uppercase tracking-tight text-white">Preventio Group SAC</span>
+                    </div>
+                    <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+                        Especialistas en la Ley N° 29783. Garantizamos la tranquilidad administrativa, civil y penal de las empresas en todo el Perú frente a las auditorías de SUNAFIL.
+                    </p>
+                    <div class="text-xs text-slate-400 space-y-1">
+                        <p>📍 Dirección Sede: Calle Las Violetas 103, Comas, Lima, Perú</p>
+                        <p>📞 Celular / WhatsApp: +51 933 590 953</p>
+                        <p>✉️ Correo de Consultas: contacto@preventiogroup.com</p>
+                    </div>
+                </div>
+
+                <!-- Fast Links -->
+                <div class="space-y-4">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-slate-300">Navegación</h4>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="#ley29783" class="hover:text-white transition-colors">La Ley N° 29783</a></li>
+                        <li><a href="#servicios" class="hover:text-white transition-colors">Nuestros Monitoreos</a></li>
+                        <li><a href="#calculadora" class="hover:text-white transition-colors">Calculadora de Sanciones</a></li>
+                        <li><a href="#metodologia" class="hover:text-white transition-colors">Cómo medimos los agentes</a></li>
+                        <li><a href="#contacto" class="hover:text-white transition-colors">Solicitar Presupuesto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal reference -->
+                <div class="space-y-4">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-slate-300">Normativa Vigente</h4>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><span>• Ley N° 29783 (Seguridad y Salud)</span></li>
+                        <li><span>• D.S. N° 005-2012-TR (Reglamento)</span></li>
+                        <li><span>• R.M. N° 375-2008-TR (Ergonomía)</span></li>
+                        <li><span>• R.M. N° 412-2022-TR (Psicosocial)</span></li>
+                        <li><span>• D.S. N° 015-2005-SA (Químicos)</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Credits and legal notes -->
+            <div class="border-t border-slate-900 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>© <span id="footer-year">2026</span> Preventio Group SAC. Todos los derechos reservados.</p>
+                <div class="flex gap-4">
+                    <span class="hover:text-slate-400 cursor-pointer">Términos del Servicio</span>
+                    <span>|</span>
+                    <span class="hover:text-slate-400 cursor-pointer">Política de Privacidad</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Logic & State Script -->
+    <script>
+        // Set dynamic year
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+        // SUNAFIL Fine scale rates (approximated according to the RLGIT Table of Perú)
+        const UIT_VALUE = 5350;
+
+        // Gravity multipliers based on worker brackets
+        const GRAVITY_RATES = {
+            'grave': {
+                'micro': [
+                    { min: 1, max: 10, uit: 0.11 },
+                    { min: 11, max: 1000, uit: 0.15 }
+                ],
+                'pequena': [
+                    { min: 1, max: 10, uit: 0.45 },
+                    { min: 11, max: 30, uit: 0.55 },
+                    { min: 31, max: 50, uit: 0.75 },
+                    { min: 51, max: 100, uit: 1.10 },
+                    { min: 101, max: 1000, uit: 2.20 }
+                ],
+                'no-mype': [
+                    { min: 1, max: 10, uit: 1.57 },
+                    { min: 11, max: 30, uit: 2.30 },
+                    { min: 31, max: 50, uit: 3.40 },
+                    { min: 51, max: 100, uit: 5.10 },
+                    { min: 101, max: 200, uit: 7.60 },
+                    { min: 201, max: 300, uit: 11.35 },
+                    { min: 301, max: 400, uit: 15.10 },
+                    { min: 401, max: 500, uit: 18.90 },
+                    { min: 501, max: 1000, uit: 26.12 }
+                ]
+            },
+            'muy-grave': {
+                'micro': [
+                    { min: 1, max: 10, uit: 0.23 },
+                    { min: 11, max: 1000, uit: 0.45 }
+                ],
+                'pequena': [
+                    { min: 1, max: 10, uit: 0.77 },
+                    { min: 11, max: 30, uit: 1.10 },
+                    { min: 31, max: 50, uit: 1.65 },
+                    { min: 51, max: 100, uit: 2.75 },
+                    { min: 101, max: 1000, uit: 5.00 }
+                ],
+                'no-mype': [
+                    { min: 1, max: 10, uit: 2.63 },
+                    { min: 11, max: 30, uit: 4.10 },
+                    { min: 31, max: 50, uit: 6.15 },
+                    { min: 51, max: 100, uit: 9.20 },
+                    { min: 101, max: 200, uit: 13.80 },
+                    { min: 201, max: 300, uit: 20.70 },
+                    { min: 301, max: 400, uit: 27.60 },
+                    { min: 401, max: 500, uit: 34.50 },
+                    { min: 501, max: 1000, uit: 52.53 }
+                ]
+            }
+        };
+
+        let currentCompanyType = 'no-mype';
+        let currentWorkerCount = 50;
+
+        // Initialize UI Components
+        window.addEventListener('DOMContentLoaded', () => {
+            calculateFine();
+
+            // Mobile menu toggle
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Fast forms submission
+            document.getElementById('hero-quick-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = document.getElementById('quick-name').value;
+                const phone = document.getElementById('quick-phone').value;
+                const workers = document.getElementById('quick-workers').value;
+                const location = document.getElementById('quick-location').value;
+                
+                // Redirigir a WhatsApp de Preventio Group SAC con los datos ya escritos
+                const baseText = `Hola Preventio Group SAC, mi nombre es ${name} (Celular: ${phone}). Solicito un pre-diagnóstico gratuito para mi sede ubicada en ${location} con un aproximado de ${workers} trabajadores expuestos.`;
+                const encodedText = encodeURIComponent(baseText);
+                const whatsappURL = `https://wa.me/51933590953?text=${encodedText}`;
+                
+                window.open(whatsappURL, '_blank');
+            });
+
+            // Main form submission
+            document.getElementById('main-contact-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const submitButton = this.querySelector('button[type="submit"]');
+                submitButton.disabled = true;
+                submitButton.textContent = "Abriendo canal de cotización...";
+
+                // Extract values
+                const name = document.getElementById('form-name').value;
+                const role = document.getElementById('form-role').value;
+                const company = document.getElementById('form-company').value;
+                const ruc = document.getElementById('form-ruc').value;
+                const email = document.getElementById('form-email').value;
+                const phone = document.getElementById('form-phone').value;
+                const msg = document.getElementById('form-message').value;
+
+                // Checked agents list
+                let agentsSelected = [];
+                if (document.getElementById('check-fisico').checked) agentsSelected.push("Físicos");
+                if (document.getElementById('check-quimico').checked) agentsSelected.push("Químicos");
+                if (document.getElementById('check-biologico').checked) agentsSelected.push("Biológicos");
+                if (document.getElementById('check-ergonomico').checked) agentsSelected.push("Ergonómicos");
+                if (document.getElementById('check-psicosocial').checked) agentsSelected.push("Psicosociales");
+                if (document.getElementById('check-todos').checked) agentsSelected.push("Todos los Agentes");
+
+                const agentsText = agentsSelected.length > 0 ? agentsSelected.join(', ') : "Por definir";
+
+                // Prepare WhatsApp API string
+                const messageText = `Hola Preventio Group SAC, solicito una cotización formal:\n\n` + 
+                                    `• Nombre: ${name}\n` +
+                                    `• Cargo: ${role}\n` +
+                                    `• Empresa: ${company} (RUC: ${ruc || 'No especificado'})\n` +
+                                    `• Correo: ${email}\n` +
+                                    `• WhatsApp: ${phone}\n` +
+                                    `• Agentes requeridos: ${agentsText}\n` +
+                                    `• Detalles: ${msg}`;
+
+                const encodedText = encodeURIComponent(messageText);
+                const whatsappURL = `https://wa.me/51933590953?text=${encodedText}`;
+
+                setTimeout(() => {
+                    document.getElementById('form-success-box').classList.remove('hidden');
+                    submitButton.disabled = false;
+                    submitButton.textContent = "Enviar Cotización vía WhatsApp →";
+                    window.open(whatsappURL, '_blank');
+                }, 1200);
+            });
+        });
+
+        // Calculator Logic
+        function setCompanyType(type) {
+            currentCompanyType = type;
+            const buttons = document.querySelectorAll('.calculator-btn-type');
+            buttons.forEach(btn => {
+                btn.className = "calculator-btn-type px-4 py-3 rounded-xl border text-sm font-semibold text-center transition-all bg-slate-700 border-slate-600 text-white hover:bg-slate-600";
+            });
+
+            const activeBtn = document.getElementById(`btn-type-${type}`);
+            if (activeBtn) {
+                activeBtn.className = "calculator-btn-type px-4 py-3 rounded-xl border text-sm font-semibold text-center transition-all bg-blue-600 border-blue-500 text-white shadow-lg";
+            }
+
+            calculateFine();
+        }
+
+        // Sync inputs
+        function updateWorkerCount(val) {
+            currentWorkerCount = parseInt(val);
+            document.getElementById('worker-number').value = val;
+            calculateFine();
+        }
+
+        function updateWorkerRange(val) {
+            if (val < 1) val = 1;
+            if (val > 1000) val = 1000;
+            currentWorkerCount = parseInt(val);
+            document.getElementById('worker-range').value = val;
+            calculateFine();
+        }
+
+        // Calculate fine
+        function calculateFine() {
+            const severity = document.getElementById('infraction-severity').value;
+            const brackets = GRAVITY_RATES[severity][currentCompanyType];
+            
+            let assignedUIT = 0;
+            for (let i = 0; i < brackets.length; i++) {
+                const bracket = brackets[i];
+                if (currentWorkerCount >= bracket.min && currentWorkerCount <= bracket.max) {
+                    assignedUIT = bracket.uit;
+                    break;
+                }
+            }
+
+            if (assignedUIT === 0 && brackets.length > 0) {
+                assignedUIT = brackets[brackets.length - 1].uit;
+            }
+
+            const fineSoles = assignedUIT * UIT_VALUE;
+            
+            document.getElementById('fine-soles').textContent = `S/. ${fineSoles.toLocaleString('es-PE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+            document.getElementById('fine-uit').textContent = `${assignedUIT.toFixed(2)} UITs`;
+        }
+
+        // Seamless bridge between Calculator and Contact Form
+        function saveCalculatorResult() {
+            const severity = document.getElementById('infraction-severity').value;
+            const severityText = severity === 'grave' ? 'Grave' : 'Muy Grave';
+            const companyTypeMap = {
+                'micro': 'Microempresa',
+                'pequena': 'Pequeña Empresa',
+                'no-mype': 'No MYPE (Régimen General)'
+            };
+            
+            const uitLabel = document.getElementById('fine-uit').textContent;
+            const solesLabel = document.getElementById('fine-soles').textContent;
+            
+            const holder = document.getElementById('calculator-result-holder');
+            holder.classList.remove('hidden');
+            
+            document.getElementById('holder-details').innerHTML = `
+                Régimen: <strong>${companyTypeMap[currentCompanyType]}</strong><br>
+                Personal a cargo: <strong>${currentWorkerCount} trabajadores</strong><br>
+                Multa SUNAFIL evitable: <strong class="text-red-600">${solesLabel} (${uitLabel})</strong>
+            `;
+
+            // Prep message in textarea
+            const messageArea = document.getElementById('form-message');
+            messageArea.value = `Hola, realicé el cálculo en su simulador web de SUNAFIL. Deseo cotizar con ustedes para evitar una multa estimada de ${solesLabel} (${uitLabel}) para mi empresa que opera bajo el régimen de ${companyTypeMap[currentCompanyType]} con ${currentWorkerCount} trabajadores.`;
+
+            // Set all checks
+            document.getElementById('check-todos').checked = true;
+
+            // Scroll to form smoothly
+            document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Manual quick selector for services
+        function setSelectAgent(agentName) {
+            document.getElementById('check-fisico').checked = false;
+            document.getElementById('check-quimico').checked = false;
+            document.getElementById('check-biologico').checked = false;
+            document.getElementById('check-ergonomico').checked = false;
+            document.getElementById('check-psicosocial').checked = false;
+            document.getElementById('check-todos').checked = false;
+
+            if (agentName === 'físicos') document.getElementById('check-fisico').checked = true;
+            if (agentName === 'químicos') document.getElementById('check-quimico').checked = true;
+            if (agentName === 'biológicos') document.getElementById('check-biologico').checked = true;
+            if (agentName === 'ergonómicos') document.getElementById('check-ergonomico').checked = true;
+            if (agentName === 'psicosociales') document.getElementById('check-psicosocial').checked = true;
+
+            const messageArea = document.getElementById('form-message');
+            messageArea.value = `Hola Preventio Group SAC, estoy interesado específicamente en la cotización de monitoreos de agentes ${agentName.toUpperCase()} para nuestra matriz de seguridad y salud en el trabajo.`;
+        }
+
+        function resetContactForm() {
+            document.getElementById('main-contact-form').reset();
+            document.getElementById('calculator-result-holder').classList.add('hidden');
+            document.getElementById('form-success-box').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
